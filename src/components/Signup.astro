@@ -1,0 +1,86 @@
+---
+---
+
+<section class="section section--alt" id="signup">
+  <div class="section-inner signup-content">
+    <div class="signup-layout">
+      <div class="signup-text">
+        <h2 class="section-heading">Ready to learn more?</h2>
+        <a href="https://placeholder-redcap-survey.jh.edu" class="cta-button signup-cta" target="_blank" rel="noopener noreferrer">
+          Take the Interest Survey &#8594;
+        </a>
+        <p class="contact-line">Have questions? Reach out anytime.</p>
+        <a href="mailto:reachstudy@jh.edu" class="email-link">reachstudy@jh.edu</a>
+      </div>
+      <div class="signup-image">
+        <img
+          src="/images/signup.webp"
+          alt="A woman sitting on a porch swing, browsing on her tablet outdoors"
+          width="800"
+          height="533"
+          loading="lazy"
+          class="signup-photo"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  .signup-content {
+    text-align: center;
+  }
+
+  .signup-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+    align-items: center;
+  }
+
+  .signup-text {
+    text-align: center;
+  }
+
+  .signup-cta {
+    font-size: 1.25rem;
+    padding: 1.1rem 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .contact-line {
+    margin-bottom: 0.5rem;
+  }
+
+  .email-link {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: var(--jhm-blue);
+  }
+
+  .signup-photo {
+    border-radius: 12px;
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    .signup-layout {
+      flex-direction: row;
+      text-align: left;
+      gap: 3rem;
+    }
+
+    .signup-text {
+      flex: 1;
+      text-align: center;
+    }
+
+    .signup-image {
+      flex: 0 0 280px;
+    }
+  }
+</style>

@@ -1,0 +1,31 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Nav from '../components/Nav.astro';
+import Hero from '../components/Hero.astro';
+import VideoIntro from '../components/VideoIntro.astro';
+import About from '../components/About.astro';
+import WhatYoullDo from '../components/WhatYoullDo.astro';
+import Eligibility from '../components/Eligibility.astro';
+import Compensation from '../components/Compensation.astro';
+import FAQ from '../components/FAQ.astro';
+import Signup from '../components/Signup.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'REACH Study — Free Back Pain Support Through Johns Hopkins';
+const description = 'The REACH Study connects Medicaid-insured adults with chronic back pain to a psychologist at no cost. Everything is virtual. Earn up to $175 in gift cards.';
+---
+
+<Layout title={title} description={description}>
+  <Nav />
+  <main id="main-content">
+    <Hero />
+    <VideoIntro />
+    <About />
+    <WhatYoullDo />
+    <Eligibility />
+    <Compensation />
+    <FAQ />
+    <Signup />
+  </main>
+  <Footer />
+</Layout>

@@ -1,0 +1,110 @@
+---
+---
+
+<section class="hero" id="hero">
+  <div class="hero-inner">
+    <div class="hero-content">
+      <h1 class="hero-headline">Living with back pain? You don't have to manage it alone.</h1>
+      <p class="hero-subtext">
+        The REACH Study connects you with a psychologist — at no cost to you — who can help you feel better. Everything happens from your phone or computer. No office visits needed.
+      </p>
+      <a href="#signup" class="cta-button hero-cta">See If You Can Join &#8594;</a>
+    </div>
+    <div class="hero-image">
+      <img
+        src="/images/hero.webp"
+        alt="A woman smiling while using her laptop at home in her living room"
+        width="800"
+        height="533"
+        loading="eager"
+        class="hero-photo"
+      />
+    </div>
+  </div>
+</section>
+
+<style>
+  .hero {
+    background-color: var(--jhm-blue);
+    color: var(--white);
+    padding: 3rem 1.5rem 3.5rem;
+  }
+
+  .hero-inner {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    align-items: center;
+  }
+
+  .hero-content {
+    text-align: center;
+  }
+
+  .hero-headline {
+    font-size: 1.85rem;
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 1.25rem;
+    color: var(--white);
+  }
+
+  .hero-subtext {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    opacity: 0.95;
+  }
+
+  .hero-cta {
+    font-size: 1.2rem;
+    padding: 1rem 2.25rem;
+  }
+
+  .hero-image {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .hero-photo {
+    border-radius: 16px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  }
+
+  @media (min-width: 768px) {
+    .hero {
+      padding: 5rem 2rem;
+    }
+
+    .hero-inner {
+      flex-direction: row;
+      text-align: left;
+    }
+
+    .hero-content {
+      text-align: left;
+      flex: 1;
+    }
+
+    .hero-headline {
+      font-size: 2.5rem;
+    }
+
+    .hero-subtext {
+      font-size: 1.2rem;
+      margin-left: 0;
+    }
+
+    .hero-image {
+      flex: 0 0 40%;
+    }
+  }
+</style>

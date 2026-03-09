@@ -1,0 +1,61 @@
+---
+const criteria = [
+  'You\'re between 18 and 64 years old',
+  'You\'ve had low back pain for 3 months or more',
+  'You\'re on Medicaid (like Jai Medical Systems, Priority Partners, or Maryland Medical Assistance) — or you have both Medicare and Medicaid',
+  'You\'re not already seeing a psychologist or therapist for pain right now',
+];
+---
+
+<section class="section" id="eligibility">
+  <div class="section-inner">
+    <h2 class="section-heading">Can I join?</h2>
+    <p class="intro">You might be a good fit if:</p>
+    <ul class="criteria-list" role="list">
+      {criteria.map((item) => (
+        <li class="criteria-item">
+          <svg class="check-icon" width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <circle cx="12" cy="12" r="11" fill="var(--jhm-blue)"/>
+            <path d="M7 12.5l3 3 7-7" stroke="var(--white)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span>{item}</span>
+        </li>
+      ))}
+    </ul>
+    <p class="cta-line">
+      Not sure if you qualify? Fill out the interest form and we'll help you figure it out.
+    </p>
+    <a href="#signup" class="cta-button">See If You Can Join &#8594;</a>
+  </div>
+</section>
+
+<style>
+  .intro {
+    margin-bottom: 1rem;
+  }
+
+  .criteria-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .criteria-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 0.75rem;
+    line-height: 1.6;
+  }
+
+  .check-icon {
+    flex-shrink: 0;
+    margin-top: 0.15rem;
+  }
+
+  .cta-line {
+    margin-bottom: 1.5rem;
+    font-style: italic;
+  }
+</style>

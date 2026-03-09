@@ -1,0 +1,140 @@
+/* ===== Custom Properties ===== */
+:root {
+  --jhm-blue: #002D74;
+  --jhm-medium-blue: #4E6D9E;
+  --jhm-light-blue: #9AACC7;
+  --jhm-light-blue-bg: #EDF1F7;
+  --jhm-gold: #F3C300;
+  --jhm-gold-hover: #d4aa00;
+  --white: #FFFFFF;
+  --warm-white: #FAFAF8;
+  --text-dark: #1a1a1a;
+  --text-on-dark: #FFFFFF;
+
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --line-height: 1.7;
+  --max-width: 800px;
+  --section-padding: 3.5rem 1.5rem;
+  --nav-height: 64px;
+}
+
+/* ===== Reset ===== */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: var(--nav-height);
+}
+
+body {
+  font-family: var(--font-body);
+  font-size: 1.125rem;
+  line-height: var(--line-height);
+  color: var(--text-dark);
+  background-color: var(--warm-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  color: var(--jhm-medium-blue);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--jhm-blue);
+}
+
+/* ===== Skip Link ===== */
+.skip-link {
+  position: absolute;
+  left: -9999px;
+  top: 0;
+  z-index: 1000;
+  background: var(--jhm-blue);
+  color: var(--white);
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  text-decoration: none;
+  border-radius: 0 0 4px 0;
+}
+
+.skip-link:focus {
+  left: 0;
+}
+
+/* ===== Shared Section Styles ===== */
+.section {
+  padding: var(--section-padding);
+}
+
+.section-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+.section--alt {
+  background-color: var(--jhm-light-blue-bg);
+}
+
+.section-heading {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--jhm-blue);
+  margin-bottom: 1.25rem;
+  line-height: 1.3;
+}
+
+/* ===== CTA Button ===== */
+.cta-button {
+  display: inline-block;
+  background-color: var(--jhm-gold);
+  color: var(--jhm-blue);
+  font-size: 1.125rem;
+  font-weight: 700;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  min-height: 48px;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.cta-button:hover {
+  background-color: var(--jhm-gold-hover);
+  color: var(--jhm-blue);
+  transform: translateY(-1px);
+}
+
+.cta-button:focus-visible {
+  outline: 3px solid var(--jhm-blue);
+  outline-offset: 3px;
+}
+
+/* ===== Responsive ===== */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.25rem;
+  }
+
+  .section {
+    padding: 5rem 2rem;
+  }
+
+  .section-heading {
+    font-size: 2rem;
+  }
+}

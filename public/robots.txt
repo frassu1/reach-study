@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://reach-study.org/sitemap-index.xml

@@ -1,0 +1,104 @@
+---
+const steps = [
+  {
+    number: '1',
+    title: 'Fill out a short survey',
+    icon: '📋',
+    description: 'Tell us a little about yourself so we can see if the study is a good fit. This takes about 10 minutes.',
+  },
+  {
+    number: '2',
+    title: 'Talk with a psychologist (virtual)',
+    icon: '💻',
+    description: 'You\'ll have one video visit with a licensed psychologist. This visit lasts about two hours, and your Medicaid covers it — you pay nothing. The psychologist will learn about your pain and talk with you about ways to feel better.',
+  },
+  {
+    number: '3',
+    title: 'Complete three check-in surveys',
+    icon: '✅',
+    description: 'Over the next six months, we\'ll ask you to fill out three short online surveys about how you\'re doing. You\'ll get paid up to $175 in Amazon gift cards for completing them.',
+  },
+  {
+    number: '4',
+    title: 'Keep meeting with a psychologist (optional)',
+    icon: '🤝',
+    description: 'If you\'d like, you can do up to eight more virtual sessions with a psychologist to build skills for managing your pain. These visits are also covered by your Medicaid — no cost to you.',
+  },
+];
+---
+
+<section class="section section--alt" id="what-youll-do">
+  <div class="section-inner">
+    <h2 class="section-heading">What happens if I join?</h2>
+    <ol class="steps" role="list">
+      {steps.map((step) => (
+        <li class="step">
+          <div class="step-marker">
+            <span class="step-number" aria-hidden="true">{step.number}</span>
+          </div>
+          <div class="step-content">
+            <h3 class="step-title">{step.title}</h3>
+            <p class="step-description">{step.description}</p>
+          </div>
+        </li>
+      ))}
+    </ol>
+    <p class="step-summary">That's it. Everything is virtual. You can do it all from home.</p>
+  </div>
+</section>
+
+<style>
+  .steps {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+
+  .step {
+    display: flex;
+    gap: 1rem;
+    align-items: flex-start;
+  }
+
+  .step-marker {
+    flex-shrink: 0;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: var(--jhm-blue);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .step-number {
+    font-size: 1.25rem;
+    font-weight: 700;
+  }
+
+  .step-content {
+    flex: 1;
+  }
+
+  .step-title {
+    font-size: 1.15rem;
+    font-weight: 700;
+    color: var(--jhm-blue);
+    margin-bottom: 0.3rem;
+  }
+
+  .step-description {
+    margin: 0;
+    line-height: 1.65;
+  }
+
+  .step-summary {
+    margin-top: 2rem;
+    font-weight: 600;
+    color: var(--jhm-blue);
+    font-size: 1.1rem;
+  }
+</style>

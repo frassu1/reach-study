@@ -1,0 +1,71 @@
+---
+---
+
+<section class="section" id="about">
+  <div class="section-inner">
+    <h2 class="section-heading">What is the REACH Study?</h2>
+    <div class="about-layout">
+      <div class="about-text">
+        <p>
+          REACH stands for Research and Engagement for Advancing Chronic pain Healthcare. It's a study at Johns Hopkins that's looking at new ways to help people with long-lasting back pain.
+        </p>
+        <p>
+          Here's the idea: pain isn't just physical. Stress, sleep, mood — they all play a part. A psychologist can teach you real skills to manage your pain and feel more in control. But most people never get the chance to work with one.
+        </p>
+        <p>
+          That's what this study is about. We want to make it easier for you to get this kind of help — and we want to learn how to do it better for everyone.
+        </p>
+      </div>
+      <div class="about-image">
+        <img
+          src="/images/about.webp"
+          alt="A man focused on his laptop at a desk at home"
+          width="800"
+          height="533"
+          loading="lazy"
+          class="about-photo"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+<style>
+  p {
+    margin-bottom: 1.25rem;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .about-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .about-photo {
+    border-radius: 12px;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  }
+
+  @media (min-width: 768px) {
+    .about-layout {
+      flex-direction: row;
+      align-items: center;
+      gap: 2.5rem;
+    }
+
+    .about-text {
+      flex: 1;
+    }
+
+    .about-image {
+      flex: 0 0 280px;
+    }
+  }
+</style>

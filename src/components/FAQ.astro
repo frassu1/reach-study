@@ -1,0 +1,86 @@
+---
+const faqs = [
+  {
+    question: 'Is this really free?',
+    answer: 'Yes. The psychology visits are covered by your Medicaid insurance. You won\'t get a bill. And you\'ll be paid for the surveys.',
+  },
+  {
+    question: 'Do I have to go anywhere?',
+    answer: 'No. Everything happens by video call or online. You can do it all from your phone or computer at home.',
+  },
+  {
+    question: 'Is this safe? Is my information private?',
+    answer: 'Yes. This study is run by Johns Hopkins and has been reviewed by their research safety board to make sure it\'s safe and fair. Your personal information is kept private.',
+  },
+  {
+    question: 'What if I change my mind?',
+    answer: 'That\'s okay. You can stop at any time. There\'s no penalty.',
+  },
+];
+---
+
+<section class="section" id="faq">
+  <div class="section-inner">
+    <h2 class="section-heading">Questions you might have</h2>
+    <div class="faq-list">
+      {faqs.map((faq) => (
+        <details class="faq-item">
+          <summary class="faq-question">{faq.question}</summary>
+          <p class="faq-answer">{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </div>
+</section>
+
+<style>
+  .faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    margin-top: 1rem;
+  }
+
+  .faq-item {
+    background-color: var(--jhm-light-blue-bg);
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .faq-question {
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: var(--jhm-blue);
+    padding: 1.25rem 1.5rem;
+    cursor: pointer;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    min-height: 48px;
+  }
+
+  .faq-question::-webkit-details-marker {
+    display: none;
+  }
+
+  .faq-question::after {
+    content: '+';
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: var(--jhm-medium-blue);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+
+  .faq-item[open] .faq-question::after {
+    content: '−';
+  }
+
+  .faq-answer {
+    padding: 0 1.5rem 1.25rem;
+    margin: 0;
+    line-height: 1.7;
+  }
+</style>
