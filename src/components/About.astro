@@ -2,7 +2,7 @@
 ---
 
 <section class="section" id="about">
-  <div class="section-inner">
+  <div class="section-inner about-inner">
     <h2 class="section-heading">What is the REACH Study?</h2>
     <div class="about-layout">
       <div class="about-text">
@@ -46,7 +46,7 @@
   }
 
   .about-photo {
-    border-radius: 12px;
+    border-radius: 16px;
     width: 100%;
     height: auto;
     object-fit: cover;
@@ -54,10 +54,14 @@
   }
 
   @media (min-width: 768px) {
+    .about-inner {
+      max-width: 1000px;
+    }
+
     .about-layout {
       flex-direction: row;
       align-items: center;
-      gap: 2.5rem;
+      gap: 3rem;
     }
 
     .about-text {
@@ -65,7 +69,7 @@
     }
 
     .about-image {
-      flex: 0 0 280px;
+      flex: 0 0 400px;
     }
   }
 </style>
