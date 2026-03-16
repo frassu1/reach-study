@@ -9,7 +9,10 @@ const links = [
 
 <nav class="nav" aria-label="Main navigation">
   <div class="nav-inner">
-    <a href="#" class="nav-logo" aria-label="REACH Study - back to top">REACH Study</a>
+    <a href="#" class="nav-logo" aria-label="REACH Study - back to top">
+      <img src="/images/reach_logo.png" alt="" class="nav-logo-icon" width="28" height="28" />
+      REACH Study
+    </a>
 
     <ul class="nav-links" role="list">
       {links.map((link) => (
@@ -68,6 +71,15 @@ const links = [
     font-size: 1.15rem;
     text-decoration: none;
     white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .nav-logo-icon {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
   }
 
   .nav-links {
