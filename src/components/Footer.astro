@@ -3,20 +3,23 @@
 
 <footer class="footer">
   <div class="footer-inner">
-    <img
-      src="/images/jhm-logo.png"
-      alt="Johns Hopkins Medicine logo"
-      class="footer-logo"
-      width="300"
-      height="80"
-      loading="lazy"
-    />
-    <p class="footer-title">REACH Study — Johns Hopkins School of Medicine</p>
+    <a href="https://www.hopkinsmedicine.org/" target="_blank" rel="noopener noreferrer" class="footer-logo-link">
+      <img
+        src="/images/jhm-logo.png"
+        alt="Johns Hopkins Medicine logo"
+        class="footer-logo"
+        width="300"
+        height="80"
+        loading="lazy"
+      />
+    </a>
+    <p class="footer-title">REACH Study - Johns Hopkins School of Medicine</p>
     <div class="footer-details">
       <p>Principal Investigator: Fenan Rassu, PhD</p>
       <p>IRB Number: IRB00520129</p>
-      <p>Study Title: REACH Study — Aim 3</p>
+      <p>Study Title: REACH Study - Aim 3</p>
     </div>
+    <p class="footer-funding">Supported by the <a href="https://www.nimhd.nih.gov/" target="_blank" rel="noopener noreferrer">National Institute on Minority Health and Health Disparities (NIMHD)</a> under Grant Number K23MD019351.</p>
     <p class="footer-copyright">&copy; {new Date().getFullYear()} Johns Hopkins University. All rights reserved.</p>
   </div>
 </footer>
@@ -35,10 +38,19 @@
     margin: 0 auto;
   }
 
+  .footer-logo-link {
+    display: inline-block;
+    margin: 0 auto 1.5rem;
+    transition: opacity 0.2s ease;
+  }
+
+  .footer-logo-link:hover {
+    opacity: 0.7;
+  }
+
   .footer-logo {
     max-width: 250px;
     height: auto;
-    margin: 0 auto 1.5rem;
   }
 
   @media (min-width: 768px) {
@@ -56,6 +68,21 @@
   .footer-details p {
     font-size: 0.9rem;
     margin-bottom: 0.3rem;
+    color: var(--jhm-medium-blue);
+  }
+
+  .footer-funding {
+    margin-top: 1.25rem;
+    font-size: 0.85rem;
+    color: var(--jhm-medium-blue);
+  }
+
+  .footer-funding a {
+    color: var(--jhm-blue);
+    text-decoration: underline;
+  }
+
+  .footer-funding a:hover {
     color: var(--jhm-medium-blue);
   }
 
