@@ -20,6 +20,11 @@
       <p>Study Title: REACH Study - Aim 3</p>
     </div>
     <p class="footer-funding">Supported by the <a href="https://www.nimhd.nih.gov/" target="_blank" rel="noopener noreferrer">National Institute on Minority Health and Health Disparities (NIMHD)</a> under Grant Number K23MD019351.</p>
+    <nav class="footer-links" aria-label="Resource pages">
+      <a href="/participants">Participant Resources</a>
+      <span class="footer-links-sep" aria-hidden="true">&middot;</span>
+      <a href="/providers">Provider Resources</a>
+    </nav>
     <p class="footer-copyright">&copy; {new Date().getFullYear()} Johns Hopkins University. All rights reserved.</p>
   </div>
 </footer>
@@ -84,6 +89,30 @@
 
   .footer-funding a:hover {
     color: var(--jhm-medium-blue);
+  }
+
+  .footer-links {
+    margin-top: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.75rem;
+    font-size: 0.85rem;
+  }
+
+  .footer-links a {
+    color: var(--jhm-blue);
+    text-decoration: underline;
+    font-weight: 600;
+  }
+
+  .footer-links a:hover {
+    color: var(--jhm-medium-blue);
+  }
+
+  .footer-links-sep {
+    color: var(--jhm-light-blue);
   }
 
   .footer-copyright {
