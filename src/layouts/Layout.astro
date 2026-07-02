@@ -24,7 +24,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <meta property="og:url" content={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
-    <meta property="og:site_name" content="REACH Study" />
+    <meta property="og:site_name" content="REACH Study | Johns Hopkins" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary" />
@@ -38,6 +38,14 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet" />
+
+    <!-- Structured Data: helps Google show "REACH Study" as the site name -->
+    <script type="application/ld+json" set:html={JSON.stringify({
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "REACH Study | Johns Hopkins",
+      "url": "https://reach-study.org"
+    })} />
 
     <title>{title}</title>
   </head>
