@@ -1,0 +1,370 @@
+---
+import Layout from '../layouts/Layout.astro';
+import NavSimple from '../components/NavSimple.astro';
+import Footer from '../components/Footer.astro';
+
+const title = 'Provider Resources - REACH Study';
+const description = 'Clinical materials for REACH Aim 3 study providers.';
+const passwordHash = '5c240a44d1c78459be91eefbb78510f20f5d1aa966ed112d8040cfc19cd9394d';
+---
+
+<Layout title={title} description={description}>
+  <NavSimple />
+  <main id="main-content">
+
+    <!-- Password Gate -->
+    <div class="gate section" id="password-gate">
+      <div class="gate-inner">
+        <img src="/images/reach_logo.png" alt="REACH Study logo" class="gate-logo" width="80" height="80" />
+        <h1 class="gate-title">Provider Resources</h1>
+        <p class="gate-text">This page is for REACH Study providers. Enter the password provided by Dr. Rassu.</p>
+        <form class="gate-form" id="gate-form">
+          <label for="gate-password" class="sr-only">Password</label>
+          <input
+            type="password"
+            id="gate-password"
+            class="gate-input"
+            placeholder="Enter password"
+            autocomplete="off"
+            required
+          />
+          <button type="submit" class="cta-button gate-submit">Access Resources</button>
+        </form>
+        <p class="gate-error" id="gate-error" hidden>
+          Incorrect password. Please try again or contact <a href="mailto:reachstudy@jh.edu">reachstudy@jh.edu</a> for help.
+        </p>
+      </div>
+    </div>
+
+    <!-- Protected Content -->
+    <div class="protected-content" id="protected-content" hidden>
+      <div class="resource-hero">
+        <div class="resource-hero-inner">
+          <h1 class="resource-title">Provider Resources</h1>
+          <p class="resource-subtitle">Clinical materials for REACH Aim 3 study providers. Contact Dr. Rassu (<a href="mailto:frassu1@jhmi.edu">frassu1@jhmi.edu</a>) with questions.</p>
+        </div>
+      </div>
+
+      <div class="section">
+        <div class="section-inner resource-sections">
+
+          <div class="resource-card">
+            <h2 class="resource-card-heading">EPPAC Intervention Materials</h2>
+            <ul class="resource-list">
+              <li>
+                <a href="https://drive.google.com/drive/folders/1-pxhelxcpZNDdlTjXK2ISDLN34Np2--F?usp=drive_link" target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  EPPAC Provider Manual
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1MXB3QT-8KsloB71bLIJSgUWK916iq8ET?usp=drive_link" target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  Decision Aid
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1w-EItn12kkYly_AjnV2QdfDOYczPJWll?usp=drive_link" target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  EPPAC Pre-work Form
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resource-card">
+            <h2 class="resource-card-heading">Therapist Manuals</h2>
+            <ul class="resource-list">
+              <li>
+                <a href="https://drive.google.com/drive/folders/1qd_B-rOZInV_QGpLrV1rLhQcmCNJuBj7?usp=drive_link" target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  CBT Therapist Manual
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resource-card">
+            <h2 class="resource-card-heading">Patient Workbooks</h2>
+            <ul class="resource-list">
+              <li>
+                <a href="https://drive.google.com/drive/folders/1tuAWYAW6gUP8fBUX2aArH5pE7n7k6I8-?usp=drive_link" target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  CBT Patient Workbook (Managing Pain Better)
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/1sIp-bXqKc5uPtCr-FjVfYAVqarOjFNDV?usp=drive_link" target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  PERT Patient Workbook (Recovering from Pain)
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="resource-card">
+            <h2 class="resource-card-heading">Treatment Resources</h2>
+            <ul class="resource-list">
+              <li>
+                <a href="https://drive.google.com/drive/folders/1IslG6Z4Y_lFAv0GBnZlY3YMuvqf6bQhU?usp=drive_link" target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  Passive Muscle Relaxation Exercise
+                </a>
+              </li>
+              <li>
+                <a href="https://drive.google.com/drive/folders/12QUxJsL2iq6c3u5Z7wJcf5tStPSS00bj?usp=drive_link" target="_blank" rel="noopener noreferrer" class="resource-link">
+                  <svg class="resource-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="12" y1="18" x2="12" y2="12"/><polyline points="9 15 12 18 15 15"/></svg>
+                  CBT Worksheets and Handouts
+                </a>
+              </li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <Footer />
+</Layout>
+
+<style>
+  .sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+  }
+
+  /* Password Gate */
+  .gate {
+    min-height: calc(100vh - var(--nav-height) - 200px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 1.5rem;
+    background-color: var(--jhm-light-blue-bg);
+  }
+
+  .gate[hidden] {
+    display: none;
+  }
+
+  .gate-inner {
+    max-width: 420px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .gate-logo {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 1.5rem;
+    object-fit: contain;
+  }
+
+  .gate-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--jhm-blue);
+    margin-bottom: 0.75rem;
+  }
+
+  .gate-text {
+    color: var(--jhm-medium-blue);
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+  }
+
+  .gate-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  .gate-input {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    font-size: 1.1rem;
+    font-family: var(--font-body);
+    border: 2px solid var(--jhm-light-blue);
+    border-radius: 8px;
+    outline: none;
+    transition: border-color 0.2s ease;
+    min-height: 48px;
+  }
+
+  .gate-input:focus {
+    border-color: var(--jhm-blue);
+    box-shadow: 0 0 0 3px rgba(0, 45, 116, 0.15);
+  }
+
+  .gate-submit {
+    width: 100%;
+    text-align: center;
+  }
+
+  .gate-error {
+    margin-top: 1rem;
+    color: #c0392b;
+    font-size: 0.95rem;
+    line-height: 1.5;
+  }
+
+  .gate-error a {
+    color: #c0392b;
+    font-weight: 600;
+  }
+
+  /* Resource Hero */
+  .resource-hero {
+    background-color: var(--jhm-blue);
+    color: var(--white);
+    padding: 3rem 1.5rem;
+    text-align: center;
+  }
+
+  .resource-hero-inner {
+    max-width: var(--max-width);
+    margin: 0 auto;
+  }
+
+  .resource-title {
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.75rem;
+  }
+
+  .resource-subtitle {
+    font-size: 1.05rem;
+    line-height: 1.6;
+    color: var(--jhm-light-blue);
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .resource-subtitle a {
+    color: var(--jhm-gold);
+    text-decoration: underline;
+  }
+
+  .resource-subtitle a:hover {
+    color: var(--white);
+  }
+
+  /* Resource Sections */
+  .resource-sections {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .resource-card {
+    background-color: var(--white);
+    border-radius: 12px;
+    padding: 1.75rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+    border: 1px solid var(--jhm-light-blue-bg);
+  }
+
+  .resource-card-heading {
+    font-size: 1.35rem;
+    font-weight: 700;
+    color: var(--jhm-blue);
+    margin-bottom: 1rem;
+    padding-bottom: 0.75rem;
+    border-bottom: 2px solid var(--jhm-gold);
+  }
+
+  .resource-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .resource-link {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.85rem 1rem;
+    border-radius: 8px;
+    text-decoration: none;
+    color: var(--jhm-blue);
+    font-weight: 600;
+    font-size: 1.05rem;
+    background-color: var(--jhm-light-blue-bg);
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    min-height: 48px;
+  }
+
+  .resource-link:hover {
+    background-color: #dce4ef;
+    color: var(--jhm-blue);
+    transform: translateX(2px);
+  }
+
+  .resource-icon {
+    width: 22px;
+    height: 22px;
+    flex-shrink: 0;
+    color: var(--jhm-medium-blue);
+  }
+
+  @media (min-width: 768px) {
+    .resource-hero {
+      padding: 4rem 2rem;
+    }
+
+    .resource-title {
+      font-size: 2.5rem;
+    }
+
+    .resource-subtitle {
+      font-size: 1.15rem;
+    }
+
+    .gate-title {
+      font-size: 2rem;
+    }
+
+    .resource-card {
+      padding: 2rem;
+    }
+  }
+</style>
+
+<script define:vars={{ passwordHash }}>
+  const form = document.getElementById('gate-form');
+  const input = document.getElementById('gate-password');
+  const error = document.getElementById('gate-error');
+  const gate = document.getElementById('password-gate');
+  const content = document.getElementById('protected-content');
+
+  async function hashPassword(password) {
+    const encoder = new TextEncoder();
+    const data = encoder.encode(password);
+    const hashBuffer = await crypto.subtle.digest('SHA-256', data);
+    const hashArray = Array.from(new Uint8Array(hashBuffer));
+    return hashArray.map(b => b.toString(16).padStart(2, '0')).join('');
+  }
+
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const hash = await hashPassword(input.value);
+    if (hash === passwordHash) {
+      gate.hidden = true;
+      content.hidden = false;
+    } else {
+      error.hidden = false;
+      input.value = '';
+      input.focus();
+    }
+  });
+</script>
